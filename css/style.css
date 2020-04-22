@@ -1,0 +1,326 @@
+/*-------------------------------------------------------------------------*/
+/*	Font Face
+/*-------------------------------------------------------------------------*/
+
+@font-face{
+	font-family:'tanha';
+	src:url('../fonts/tanha.ttf') format('truetype');
+}
+
+
+@font-face{
+	font-family:'mj';
+	src:url('../fonts/mj.ttf') format('truetype');
+}
+
+@font-face{
+	font-family:'mono';
+	src:url('../fonts/ubuntu-mono.ttf') format('truetype');
+}
+
+@font-face{
+	font-family:'slogan';
+	src:url('../fonts/slogan.ttf') format('truetype');
+}
+
+@font-face{
+	font-family:'kami';
+	src:url('../fonts/kami.ttf') format('truetype');
+}
+
+@font-face{
+	font-family:'kami';
+	src:url('../fonts/kami.ttf') format('truetype');
+}
+
+/*-------------------------------------------------------------------------*/
+/*	Browser reset
+/*-------------------------------------------------------------------------*/
+* {
+	padding:0;
+	margin:0;
+    text-decoration:none;
+    list-style:none !important;
+	outline:none !important;
+}
+
+html {
+	width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+	background-color:#333;
+}
+
+h1 {
+    direction:ltr;
+    text-align:center;
+    color:#eee;
+    font-family: mj, sans-serif;
+    font-size:10vw;
+
+    
+}
+h2 {
+    direction:ltr;
+    text-align:center;
+    color:#eee;
+    font-size:4vw;
+    font-family:slogan, sans-serif;
+
+    }
+
+h3 {
+    direction:rtl;
+    text-align:right;
+    color:#bbb;
+    font-size:5vw;
+    font-family:tanha,sans-serif
+}
+
+h4 {}
+h5 {}
+h6 {}
+
+a {
+	font-family:mono, sans-serif;
+}
+a:hover {
+	font-family:mono, sans-serif;
+
+
+}
+a:active { 
+	font-family:mono, sans-serif;
+
+
+}
+
+p {
+    color:#fff;
+    direction:rtl;
+    text-align:right;
+    font-family:kami, sans-serif;
+    font-size:2rem;
+}
+
+/*-------------------------------------------------------------------------*/
+/*	Navbar
+/*-------------------------------------------------------------------------*/
+.navbar {
+    width: 150px;
+    height: 100%;
+    top: 0;
+    right: -150px;
+    margin: 0;
+    padding: 0;
+	z-index: 9;
+    position: fixed;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: #2e2e2e;
+}
+
+.navbar .navbar-nav {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: auto;
+}
+
+.navbar .navbar-nav .nav-item {
+    float: none;
+    display: block;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    padding: 1rem 0;
+    display: block;
+    text-align: center;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover  {}
+.navbar .navbar-nav .nav-item .nav-link.active {}
+
+.navbar .navbar-nav .nav-item .nav-link img {}
+
+.navbar .navbar-toggler {
+	top: 10px;
+	right: 160px;
+	display: block;
+	position: absolute;
+}
+
+/*-------------------------------------------------------------------------*/
+/*	General
+/*-------------------------------------------------------------------------*/
+.page-content {
+    height: 100%;
+}
+
+.section {
+    
+}
+
+.section.mh100,
+.section.mh100 .container,
+.section.mh100 .container .row {
+    min-height:100%;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*	Header
+/*-------------------------------------------------------------------------*/
+.header {}
+
+.img-head {
+    width:100%;
+    position:relative;
+}
+.img-head:before{
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    position:absolute;
+    content:'';
+    background-image: url("../images/mehdiMj.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    margin-top:5px;
+    border-radius:10px;
+      filter: blur(3px);
+  -webkit-filter: blur(8px);
+
+}
+
+.boxing{
+
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    margin: 0 auto;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.social-icons {
+    text-align:center;
+}
+
+.social-icons > li {
+    margin:1.5rem;
+    display:inline-block;
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+/*	About me
+/*-------------------------------------------------------------------------*/
+.about-me {
+	background-color: #222831 ;
+}
+
+.comment {
+	color:#ccda46;
+	text-shadow:  rgb(43, 88, 12) 3px 3px 5px;
+	font-style: italic;
+	
+}
+
+/*-------------------------------------------------------------------------*/
+/*	instagram
+/*-------------------------------------------------------------------------*/
+.instagram {
+	background-color: #222831 ;
+}
+
+/*-------------------------------------------------------------------------*/
+/*	blog
+/*-------------------------------------------------------------------------*/
+.blog {
+	background-color: #222831;
+
+
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*	Footer
+/*-------------------------------------------------------------------------*/
+.footer {
+	background-color: #222831;
+	color:#eee;
+
+}
+
+.footer-text {
+	font-family: slogan, sans-serif;
+	direction: ltr;
+
+}
+
+.copyleft {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+/*-------------------------------------------------------------------------*/
+/*	Beauty style
+/*-------------------------------------------------------------------------*/
+.hr {
+ position:relative;   
+}
+.hr:after{
+    height:3px;
+    width:110%;
+    position:absolute;
+    right:0;
+    bottom:-10px;
+    content:'';
+    background-color:#fff;
+    border-radius:50px;
+}
+
+.img-mj {
+    background-image: url("../images/mehdimj.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    /*width: 20vw;
+    height: 8vw;*/
+	width: 10vw;
+    height: 10vw;
+}
+
+/*-------------------------------------------------------------------------*/
+/*	Responsive
+/*-------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+	.page-content {
+		margin-right: 150px;
+	}
+
+	.navbar {
+		right: 0 !important;
+	}
+	
+	.navbar .navbar-toggler {
+		display: none;
+	}
+}
