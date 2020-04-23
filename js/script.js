@@ -54,11 +54,11 @@ jqxhr.done(function(data, textStatus, xhr) {
 
     $.each(data.items, function(key, item)
     {
-        article = '<article id="post-' + key + '" class="post post-' + key + '" style="background-image:url(' + item.enclosure.link + ')">'
-                    + '<h3 class="post-title">' + item.title + '</h3>'
-                    + '<author class="post-author">' + item.author + '</author>'
-                    + '<time class="post-time" datetime="' + item.pubDate + '">' + item.pubDate + '</time>'
-                    + '<a class="post-link" href="' + item.link + '">Read more!</a>'
+        article = '<article id="post-' + key + '" class="blog-grid-item post post-' + key + '" style="background-image:url(' + item.enclosure.link + ')">'
+                    //+ '<h3 class="post-title">' + item.title + '</h3>'
+                    //+ '<author class="post-author">' + item.author + '</author>'
+                    //+ '<time class="post-time" datetime="' + item.pubDate + '">' + item.pubDate + '</time>'
+                    + '<a class="post-link" href="' + item.link + '">ادامه مطلب</a>'
                 + '</article>';
 
         html = html + article;
